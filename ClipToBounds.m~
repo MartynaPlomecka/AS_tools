@@ -1,0 +1,11 @@
+function [dataset] = ClipToBounds(dataset, min_val, max_val)
+ind = []
+for i=1:size(dataset.data, 3)
+    if all(dataset.data(107,:,i) < max_val) && all(dataset.data(107,:,i) > min_val)
+        ind(end+1) = 1;
+    else
+        ind(end+1
+end
+dataset.data = df;
+end
+
